@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Page</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('https://is.gd/WCNHLR');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family: 'Orelega One', cursive;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 90px;
+        filter: invert(100%);
+        filter: drop-shadow(8px 8px 10px red);
+    }
+
+   
+
+    .left div {
+        text-align: center;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .left div:hover{
+        cursor: pointer;
+        color: khaki;
+    }
+    .mid {
+        /* border: 2px solid rgb(255, 238, 0); */
+        /* To center element by dispaly  
+            display: inline-block;
+            position: absolute;
+            right: 644px; */
+        display: block;
+        width: 48%;
+        margin: 20px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(0, 247, 255); */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+    #right-para1{
+        /* border: 2px solid yellow; */
+        border-radius: 8px;
+        display:inline-block;
+        position: fixed;
+        right: 47px;
+        bottom:60px;
+        font-size: 17px;
+    }
+    #right-para1:hover{
+      color: rgb(187, 41, 53);
+      cursor: pointer;
+    }
+    #right-para2{
+        /* border: 2px solid yellow; */
+        border-radius: 8px;
+        display:inline-block;
+        position: fixed;
+        right: 34px;
+        bottom:21px;
+        font-size: 17px;
+    }
+    #right-para2:hover{
+        color: rgb(187, 41, 53);
+      cursor: pointer;
+    }
+    .btn {
+        margin: 0px 8px;
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(90, 89, 89);
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 18px 10px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(80, 195, 199);
+    }
+
+    .container {
+        border: 2px solid red;
+        border-radius: 20px;
+        width: 33%;
+        height: 400px;
+        margin: 130px 90px;
+        padding: 20px 20px;
+    }
+
+    .form input {
+        text-align: center;
+        padding: 6px;
+        margin: 10px 70px;
+        display: block;
+        width: 300px;
+        border-radius: 18px;
+        font-family: 'Orelega One', cursive;
+        font-size: 15px;
+    }
+
+    .head1 {
+        text-align: center;
+        font-family: 'Orelega One', cursive;
+    }
+
+    .container button {
+        display: block;
+        width: 43%;
+        margin: 20px auto;
+        border: 2px solid white;
+        border-radius: 8px;
+    }
+
+    .container button:hover {
+        background-color: rgb(122, 120, 120);
+    }
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://is.gd/BApfbJ" alt="">
+            <div>
+
+                Sahil Fitness Club
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Blog</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Courses</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <p id="right-para1">
+                Call Us :- 0188-4456-20 ,
+                         0972-4682-34
+                
+              </p>
+              <p id="right-para2">
+                
+                Email Us :- buildingbeasts10@gmail.com
+              </p>
+            <button class="btn">Login</button>
+            <button class="btn">Sign Up</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="head1">Be the Beast</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your Email">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
