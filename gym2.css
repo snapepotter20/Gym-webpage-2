@@ -1,0 +1,151 @@
+  body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('https://is.gd/WCNHLR');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family: 'Orelega One', cursive;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 90px;
+        filter: invert(100%);
+        filter: drop-shadow(8px 8px 10px red);
+    }
+
+   
+
+    .left div {
+        text-align: center;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .left div:hover{
+        cursor: pointer;
+        color: khaki;
+    }
+    .mid {
+        /* border: 2px solid rgb(255, 238, 0); */
+        /* To center element by dispaly  
+            display: inline-block;
+            position: absolute;
+            right: 644px; */
+        display: block;
+        width: 48%;
+        margin: 20px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(0, 247, 255); */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+    #right-para1{
+        /* border: 2px solid yellow; */
+        border-radius: 8px;
+        display:inline-block;
+        position: fixed;
+        right: 47px;
+        bottom:60px;
+        font-size: 17px;
+    }
+    #right-para1:hover{
+      color: rgb(187, 41, 53);
+      cursor: pointer;
+    }
+    #right-para2{
+        /* border: 2px solid yellow; */
+        border-radius: 8px;
+        display:inline-block;
+        position: fixed;
+        right: 34px;
+        bottom:21px;
+        font-size: 17px;
+    }
+    #right-para2:hover{
+        color: rgb(187, 41, 53);
+      cursor: pointer;
+    }
+    .btn {
+        margin: 0px 8px;
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(90, 89, 89);
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 18px 10px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(80, 195, 199);
+    }
+
+    .container {
+        border: 2px solid red;
+        border-radius: 20px;
+        width: 33%;
+        height: 400px;
+        margin: 130px 90px;
+        padding: 20px 20px;
+    }
+
+    .form input {
+        text-align: center;
+        padding: 6px;
+        margin: 10px 70px;
+        display: block;
+        width: 300px;
+        border-radius: 18px;
+        font-family: 'Orelega One', cursive;
+        font-size: 15px;
+    }
+
+    .head1 {
+        text-align: center;
+        font-family: 'Orelega One', cursive;
+    }
+
+    .container button {
+        display: block;
+        width: 43%;
+        margin: 20px auto;
+        border: 2px solid white;
+        border-radius: 8px;
+    }
+
+    .container button:hover {
+        background-color: rgb(122, 120, 120);
+    }
