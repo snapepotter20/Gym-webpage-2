@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: 'Playfair Display', serif;
+    }
+    body{
+      width: 100%;
+      height: 100%;
+    }
+    .container{
+      /* border: 2px solid red; */
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center ;
+      width: 100%;
+      height: 100%;
+      padding: 24px 100px;
+    }
+    .container::after{
+      content: "";
+      background: url('https://is.gd/rRmcbD') no-repeat center center/cover;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.5;
+    }
+    .content-box{
+      /* border: 2px solid red; */
+        max-width: 850px;
+        border-radius: 10px;
+        display: grid; 
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    }
+    .left{
+      height:100%;
+      background: url('https://is.gd/zribQb') no-repeat center center/cover;
+      border-radius: 10px;
+    }
+    .left:hover{
+      opacity: 0.6;
+    }
+    .right{
+      
+      padding: 34px 45px;
+    }
+    h2{
+      position: relative;
+      padding-bottom: 12px;
+      margin-bottom: 10px;
+    }
+    h2::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%);
+      height: 4px;
+      width: 50px;
+      border-radius: 2px;
+      background-color: rgb(7, 7, 7);
+      color: white;
+    }
+    .field{
+      width: 100%;
+      padding: 0.5rem 1rem;
+      outline: none;
+      border: 2px solid rgba(3, 3, 3, 0);
+      background-color: rgba(230,230,230, 0.6);
+      font-size: 1.1rem;
+      margin-bottom: 22px;
+      transition: 0.3s;
+      text-align:center;
+    }
+    .field:hover{
+      background-color: rgb(156, 152, 152);
+    }
+    .field:focus{
+      background-color: #fff;
+      border: 2px solid rgba(30, 85, 250, 0.47);
+    }
+    .area{
+      min-width: 350px;
+      margin-bottom: 10px;
+      text-align:center;
+    }
+    .btn{
+      width: 100%;
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      background-color: #2ecc71;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      color: #fff;
+      transition: .3s;
+    }
+    .btn:hover{
+      background-color: #27ae60;
+    }
+    @media screen and (max-width:888px) {
+      .content-box{
+        grid-template-columns: 1fr;
+      }
+      .left{
+        height: 600px;
+      }
+      .container{
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content-box">
+      <div class="left"></div>
+        <div class="right">
+           <h2>Sign in</h2>
+           <input type="text" class="field" placeholder="Name">
+           <input type="email" class="field" placeholder="Email">
+           <input type="password" class="field" placeholder="Your password">
+           <textarea class="area" placeholder="Message"></textarea>
+           <button class="btn">Submit</button>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
