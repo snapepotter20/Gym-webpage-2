@@ -1,4 +1,4 @@
-# HTML-CSS-2
+# Gym-Webpage-2
 This is a GYM webpage created by using simple HTML and CSS properties.
 This is a webpage designed by using HTML and CSS properties.This is a webpage for fitness freaks who wants to join the best GYM in their locality.
 <br>
